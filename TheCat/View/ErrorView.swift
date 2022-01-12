@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ErrorView: View {
+    @ObservedObject var breedFetcher: BreedFetcher
+    
     var body: some View {
-        Text("error")
+        VStack{
+            Text("😿")
+                .font(.system(size: 80))
+            Text(breedFetcher.errorMessage ?? "")
+        }
     }
 }
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView()
+        ErrorView(breedFetcher: BreedFetcher.errorState())
     }
 }

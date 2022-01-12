@@ -14,7 +14,7 @@ struct ContentView: View {
         if breedFetcher.isLoading {
             LoadingView()
         } else if breedFetcher.errorMessage != nil {
-            ErrorView()
+            ErrorView(breedFetcher: breedFetcher)
         } else {
             BreedListView(breeds: breedFetcher.breeds)
         }
