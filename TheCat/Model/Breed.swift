@@ -11,7 +11,7 @@ struct Breed: Codable, CustomStringConvertible{
     let id: String
     let name: String
     let temperament: String
-    let breedExplanation: String
+    let explanation: String
     let image: BreedImage?
     
     var description: String {
@@ -22,7 +22,22 @@ struct Breed: Codable, CustomStringConvertible{
         case id
         case name
         case temperament
-        case breedExplanation = "description"
+        case explanation = "description"
         case image
+    }
+    
+    init(id: String, name: String, temprament: String, explanation: String, image: BreedImage?){
+        self.id = id
+        self.name = name
+        self.temperament = temprament
+        self.explanation = explanation
+        self.image = image
+    }
+    
+    
+    // Preview Helpers
+    static func example1() -> Breed {
+        let breed = Breed(id: "abys", name: "Abyssinian", temprament: "Active, Energetic, Independent, Intelligent, Gentle", explanation: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.", image: nil)
+        return breed
     }
 }
