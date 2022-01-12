@@ -13,7 +13,11 @@ struct BreedListView: View {
         NavigationView {
             List{
                 ForEach(breeds){ breed in
-                    BreedRow(breed: breed)
+                    NavigationLink {
+                        BreedDetailView(breed: breed)
+                    } label: {
+                        BreedRow(breed: breed)
+                    }
                 }
             }
             .listStyle(PlainListStyle())
