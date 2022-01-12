@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Breed: Codable, CustomStringConvertible{
+struct Breed: Codable, CustomStringConvertible, Identifiable{
     let id: String
     let name: String
     let temperament: String

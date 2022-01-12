@@ -19,6 +19,8 @@
 		F7A07249278F206000C5C191 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A07248278F206000C5C191 /* LoadingView.swift */; };
 		F7A0724B278F245700C5C191 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0724A278F245700C5C191 /* APIError.swift */; };
 		F7A0724D278F289400C5C191 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0724C278F289400C5C191 /* APIService.swift */; };
+		F7A0724F278F370B00C5C191 /* BreedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0724E278F370B00C5C191 /* BreedRow.swift */; };
+		F7A07251278F371500C5C191 /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A07250278F371500C5C191 /* BreedDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		F7A07248278F206000C5C191 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F7A0724A278F245700C5C191 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		F7A0724C278F289400C5C191 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F7A0724E278F370B00C5C191 /* BreedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRow.swift; sourceTree = "<group>"; };
+		F7A07250278F371500C5C191 /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				F7A07244278F202E00C5C191 /* BreedListView.swift */,
 				F7A07246278F205700C5C191 /* ErrorView.swift */,
 				F7A07248278F206000C5C191 /* LoadingView.swift */,
+				F7A0724E278F370B00C5C191 /* BreedRow.swift */,
+				F7A07250278F371500C5C191 /* BreedDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,7 +193,9 @@
 			files = (
 				F7A07241278F1A6900C5C191 /* BreedImage.swift in Sources */,
 				F7A0723F278F1A4900C5C191 /* Breed.swift in Sources */,
+				F7A0724F278F370B00C5C191 /* BreedRow.swift in Sources */,
 				F7A07230278F191800C5C191 /* ContentView.swift in Sources */,
+				F7A07251278F371500C5C191 /* BreedDetailView.swift in Sources */,
 				F7A07243278F1C2B00C5C191 /* BreedFetcher.swift in Sources */,
 				F7A0724D278F289400C5C191 /* APIService.swift in Sources */,
 				F7A07247278F205700C5C191 /* ErrorView.swift in Sources */,

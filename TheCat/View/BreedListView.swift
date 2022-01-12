@@ -10,12 +10,20 @@ import SwiftUI
 struct BreedListView: View {
     let breeds: [Breed]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List{
+                ForEach(breeds){ breed in
+                    BreedRow(breed: breed)
+                }
+            }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Find Your Perfect Cat")
+        }
     }
 }
 
 struct BreedListView_Previews: PreviewProvider {
     static var previews: some View {
-        BreedListView(breeds: [Breed]())
+        BreedListView(breeds: BreedFetcher.succssesState().breeds)
     }
 }
